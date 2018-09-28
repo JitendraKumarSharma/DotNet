@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<b>
+    @ViewData["msg"]
+</b>
+@ViewData["val"]
+
+<input type="button" value="Move to Test" onclick='window.location = "@Url.Action("Index", "Test")";' />

@@ -1,0 +1,5 @@
+F:\DotNet\TestConsoleApp\TestConsoleApp\bin\Debug\TestConsoleApp.exe.config
+F:\DotNet\TestConsoleApp\TestConsoleApp\bin\Debug\TestConsoleApp.exe
+F:\DotNet\TestConsoleApp\TestConsoleApp\bin\Debug\TestConsoleApp.pdb
+F:\DotNet\TestConsoleApp\TestConsoleApp\obj\Debug\TestConsoleApp.exe
+F:\DotNet\TestConsoleApp\TestConsoleApp\obj\Debug\TestConsoleApp.pdb

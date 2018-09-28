@@ -1,0 +1,5 @@
+F:\DotNet\EmployeePortal\Logger\bin\Debug\Logger.dll
+F:\DotNet\EmployeePortal\Logger\bin\Debug\Logger.pdb
+F:\DotNet\EmployeePortal\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+F:\DotNet\EmployeePortal\Logger\obj\Debug\Logger.dll
+F:\DotNet\EmployeePortal\Logger\obj\Debug\Logger.pdb
