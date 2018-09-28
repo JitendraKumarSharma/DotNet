@@ -1,0 +1,4 @@
+F:\DotNet\TeacherStudent\BAL\bin\Debug\BAL.dll
+F:\DotNet\TeacherStudent\BAL\bin\Debug\BAL.pdb
+F:\DotNet\TeacherStudent\BAL\obj\Debug\BAL.dll
+F:\DotNet\TeacherStudent\BAL\obj\Debug\BAL.pdb

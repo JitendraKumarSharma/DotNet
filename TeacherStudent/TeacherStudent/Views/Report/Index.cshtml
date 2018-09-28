@@ -1,0 +1,34 @@
+﻿@using System.Collections;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Teacher Report</h2>
+
+@Html.ActionLink("Go to Student", "Index", "Students")
+@Html.ActionLink("Go to Teacher", "Index", "Teachers")
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Student Name</td>
+            <td>Class</td>
+            <td>Teacher Name</td>
+            <td>Teacher Address</td>
+        </tr>
+    </thead>
+    <tbody>
+        @{foreach (var item in Model)
+            {
+                
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Class</td>
+                    <td>@item.Teacher.TeacherName</td>
+                    <td>@item.Teacher.Address</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
