@@ -57,6 +57,14 @@ namespace TeacherStudent.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "StudentId,Name,Class,Section,Address,TeacherId")] Student student)
         {
+            if(student.Section == "")
+            {
+                ModelState.AddModelError("Section", "Enter Section");
+            }
+            if (student.Address == "")
+            {
+                ModelState.AddModelError("Address", "Enter Address");
+            }
             if (ModelState.IsValid)
             {
                 db.Students.Add(student);
@@ -91,6 +99,14 @@ namespace TeacherStudent.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "StudentId,Name,Class,Section,Address,TeacherId")] Student student)
         {
+            if(student.Section=="")
+            {
+                ModelState.AddModelError("Section", "Enter Section");
+            }
+            if (student.Address == "")
+            {
+                ModelState.AddModelError("Address", "Enter Address");
+            }
             if (ModelState.IsValid)
             {
                 db.Entry(student).State = EntityState.Modified;

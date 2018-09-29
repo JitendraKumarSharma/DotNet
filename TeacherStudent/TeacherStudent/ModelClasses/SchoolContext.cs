@@ -10,6 +10,7 @@ namespace TeacherStudent.ModelClasses
         public SchoolContext()
             : base("name=School")
         {
+            
         }
 
         public virtual DbSet<Student> Students { get; set; }

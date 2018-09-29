@@ -3,25 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using UnitTesting.Services.ServicesContract;
 
 namespace UnitTesting.Controllers
 {
     public class CalculatorController : Controller
     {
+        private ICalculator calObj;
+        public CalculatorController(ICalculator calObj)
+        {
+            this.calObj = calObj;
+        }
         // GET: Calculator
         public ActionResult Index()
         {
             return View();
         }
 
-        public int Add(int a, int b)
+        public void Add()
         {
-            return a + b;
+            this.calObj.Add(4, 4);
         }
 
-        public int Sub(int a, int b)
+        public void Sub()
         {
-            return a - b;
+            this.calObj.Add(4, 4);
         }
     }
 }

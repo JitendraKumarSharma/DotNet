@@ -8,6 +8,8 @@ namespace TeacherStudent.ServiceContract
 {
     public interface IEmail
     {
-         Task<bool> SendEmail(string name);
+        Task<bool> SendEmail(string name);
     }
+
+
 }

@@ -2,3 +2,10 @@ F:\DotNet\TeacherStudent\BAL\bin\Debug\BAL.dll
 F:\DotNet\TeacherStudent\BAL\bin\Debug\BAL.pdb
 F:\DotNet\TeacherStudent\BAL\obj\Debug\BAL.dll
 F:\DotNet\TeacherStudent\BAL\obj\Debug\BAL.pdb
+G:\DotNet\TeacherStudent\BAL\bin\Debug\BAL.dll
+G:\DotNet\TeacherStudent\BAL\bin\Debug\BAL.pdb
+G:\DotNet\TeacherStudent\BAL\obj\Debug\BAL.dll
+G:\DotNet\TeacherStudent\BAL\obj\Debug\BAL.pdb
+G:\DotNet\TeacherStudent\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+G:\DotNet\TeacherStudent\BAL\bin\Debug\DAL.dll
+G:\DotNet\TeacherStudent\BAL\bin\Debug\DAL.pdb
