@@ -1,1 +1,10 @@
-F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.dll
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.dll
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.xml
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+G:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
