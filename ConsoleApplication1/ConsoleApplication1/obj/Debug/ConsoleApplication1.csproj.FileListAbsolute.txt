@@ -8,3 +8,12 @@ G:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlS
 G:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 G:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 G:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.dll
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.dll
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.xml
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Collections;
 
@@ -11,6 +10,7 @@ namespace ConsoleApplication1
 {
     public static class IntExtensions
     {
+        //Extnsion Method
         public static bool IsGreaterThan(this int i, int value,int b)
         {
             return i > value;
@@ -32,6 +32,16 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            Task t = Task.Run(() =>
+            {
+                for (int x = 0; x < 500; x++)
+                {
+                    Console.Write("Hi ");
+                }
+            });
+            t.Wait();
+            Console.WriteLine();
+
             string name = "Mark";
             var date = DateTime.Now;
 
