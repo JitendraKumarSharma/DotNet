@@ -2,3 +2,8 @@ F:\DotNet\TeacherStudent\DAL\bin\Debug\DAL.dll
 F:\DotNet\TeacherStudent\DAL\bin\Debug\DAL.pdb
 F:\DotNet\TeacherStudent\DAL\obj\Debug\DAL.dll
 F:\DotNet\TeacherStudent\DAL\obj\Debug\DAL.pdb
+G:\DotNet\TeacherStudent\DAL\bin\Debug\DAL.dll
+G:\DotNet\TeacherStudent\DAL\bin\Debug\DAL.pdb
+G:\DotNet\TeacherStudent\DAL\obj\Debug\DAL.dll
+G:\DotNet\TeacherStudent\DAL\obj\Debug\DAL.pdb
+G:\DotNet\TeacherStudent\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

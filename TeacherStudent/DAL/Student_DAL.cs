@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Class1
+    public class Student_DAL
     {
+        public void save()
+        {
+
+        }
     }
 }

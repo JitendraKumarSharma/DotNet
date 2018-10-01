@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Mvc;
 using TeacherStudent.ModelClasses;
 using TeacherStudent.ServiceContract;
+using BAL;
 
 namespace TeacherStudent.Controllers
 {
@@ -16,16 +17,23 @@ namespace TeacherStudent.Controllers
     {
         private IEmail emailObj;
         private SchoolContext db;
-        public TeachersController(IEmail emailObj, SchoolContext dbContext)
+        private Student_BAL balObj;
+        private IGreeting greetObj;
+        IGreeting greetObj1;
+        public TeachersController(IEmail emailObj, SchoolContext dbContext, Student_BAL balObj, IGreeting greetObj, IGreeting greetObj1)
         {
             this.emailObj = emailObj;
             this.db = dbContext;
+            this.balObj = balObj;
+            this.greetObj = greetObj;
+            this.greetObj1 = greetObj1;
         }
-
 
         // GET: Teachers
         public async Task<ActionResult> Index()
         {
+            TempData["msg"] = greetObj.getGreeting() + " " + greetObj1.getGreeting();
+            balObj.Save();
             return View(await db.Teachers.ToListAsync());
         }
 

@@ -264,7 +264,9 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceContract\IEmail.cs" />
+    <Compile Include="ServiceContract\IGreeting.cs" />
     <Compile Include="Services\Email.cs" />
+    <Compile Include="Services\Greeting.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -360,6 +362,12 @@
     <EmbeddedResource Include="Migrations\201809281310493_StudentAddress.resx">
       <DependentUpon>201809281310493_StudentAddress.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{4c2b9670-4049-4294-b647-459376d5b557}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

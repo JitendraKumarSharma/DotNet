@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TeacherStudent.ModelClasses;
+using System.Data.Entity;
 
 namespace TeacherStudent.Controllers
 {
@@ -20,6 +21,7 @@ namespace TeacherStudent.Controllers
             //ViewBag.Data=db.Students.Include()
             var stu = db.Students.Include("Teacher").ToList();
             var stu1 = db.Students.Select(x => new { x.Teacher.TeacherName, x.Teacher.Address });
+            var dd = db.Students.Include(x => x.Teacher).ToList(); // Works when use System.Data.Entity;
             //    .Select(item =>
             //new
             //{
