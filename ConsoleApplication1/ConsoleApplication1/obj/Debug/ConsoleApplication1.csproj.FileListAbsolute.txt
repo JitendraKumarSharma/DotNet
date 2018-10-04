@@ -17,3 +17,4 @@ F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.xml
 F:\DotNet\ConsoleApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
 F:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 F:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+F:\DotNet\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
