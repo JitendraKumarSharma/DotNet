@@ -12,10 +12,34 @@ namespace ConsoleApplication1
         public List<string> Skills { get; set; }
     }
 
+    public class A
+    {
+        public A()
+        {
+            Console.WriteLine("Hi you are in class A");
+        }
+
+        public A(int x)
+        {
+
+        }
+    }
+
+    public class B : A
+    {
+        public B()
+        {
+            Console.WriteLine("Hi you are in class B");
+        }
+    }
+
     class Program1
     {
         static void Main(string[] args)
         {
+            //B bObj = new B(2);
+            //Console.ReadLine();
+
             List<Employee> employees = new List<Employee>();
             Employee emp1 = new Employee { Name = "Deepak", Skills = new List<string> { "C", "C++", "Java" } };
             Employee emp2 = new Employee { Name = "Karan", Skills = new List<string> { "SQL Server", "C#", "ASP.NET" } };
