@@ -1,0 +1,10 @@
+{
+    "env": {
+    "name": "DEV"
+     },
+    "apiServer": {
+    "apiConsumerKey": "fdcc0bf4d5e8ba1e9fe39b9ae404e861TRNmENtRynX2KQkc",
+    "apiConsumerSecret": "ddf2822702c88a754cc7df20d6e8bac0fc57d628d17dfc11f9ff2517ecb6ee04kXySxGAcGb5VUEeO"
+    },
+    "API_URL": "http://192.168.1.217:8000"
+}
