@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .login-box-body, .register-box-body {
+            background: #f3f3f3;
+            padding: 20px;
+            border-top: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="~/Style_CSS_JS/index2.html"><b>Login</b></a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" id="txtUserName" placeholder="Email">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <a href="#">Forgot Password</a><br>
+                    <button type="submit" class="btn btn-success btn-block btn-flat" onclick="Login()">Sign In</button>
+                    <button type="button" class="btn btn-primary btn-block btn-flat">Register</button>
+                </div>
+                <!-- /.col -->
+            </div>
+        </div>
+        <!-- /.login-box-body -->
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery 3 -->
+    <script src="~/Style_CSS_JS/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="~/Style_CSS_JS/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/Style_CSS_JS/plugins/iCheck/icheck.min.js"></script>
+    <script type="text/javascript">
+        function Login() {
+            var data = "username=" + $("#txtUserName").val() + "&password=" + $("#txtPassword").val() + "&grant_type=password";
+            $.ajax({
+                type: 'POST',
+                cache: false,
+                data: data,
+                url: 'http://localhost:1559/token',
+                success: function (data) {
+                    window.location.href = "/Dashboard/Index"
+                    sessionStorage.access_token = data.access_token;
+                },
+                error: function (err) {
+                    alert(err.responseJSON.error_description);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
