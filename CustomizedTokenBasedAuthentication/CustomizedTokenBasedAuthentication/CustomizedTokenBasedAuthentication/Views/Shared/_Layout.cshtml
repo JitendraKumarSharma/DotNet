@@ -13,6 +13,10 @@
         .user-panel {
             padding: 0% !important;
         }
+
+        .link {
+            cursor: pointer;
+        }
     </style>
     <div class="wrapper">
         <header class="main-header">
@@ -48,12 +52,12 @@
 
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
-                    <li class="active treeview">
+                    <li id="dashLink" class="treeview link">
                         <a onclick="@("window.location.href='" + @Url.Action("Index", "Dashboard") + "'");" class="navigate">
                             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         </a>
                     </li>
-                    <li class="treeview">
+                    <li id="stuLink" class="treeview link">
                         <a onclick="@("window.location.href='" + @Url.Action("Index", "Student") + "'");" class="navigate">
                             <i class="fa fa-dashboard"></i> <span>Student</span>
                         </a>
@@ -441,12 +445,5 @@
              immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
     </div>
-    <script type="text/javascript">
-        $('span').on('click', function () {
-            debugger
-            $('li').removeClass('active').removeClass('menu-open');
-            $(this).closest('li').addClass('active').addClass('menu-open');
-        });
-    </script>
 </body>
 </html>
