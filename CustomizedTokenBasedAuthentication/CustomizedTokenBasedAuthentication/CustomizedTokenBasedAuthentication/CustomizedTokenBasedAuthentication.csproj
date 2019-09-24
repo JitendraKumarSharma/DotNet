@@ -133,6 +133,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\HomePage.jpg" />
     <Content Include="Images\SMS_logo.png" />
+    <Content Include="PageScripts\Login.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
