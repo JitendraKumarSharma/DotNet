@@ -131,7 +131,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Active.png" />
     <Content Include="Images\HomePage.jpg" />
+    <Content Include="Images\InActive.gif" />
     <Content Include="Images\SMS_logo.png" />
     <Content Include="PageScripts\Login.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -2848,10 +2850,17 @@
     <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="DAL\Role.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GlobalData\EncryptDecrypt.cs" />
+    <Compile Include="GlobalData\SessionInfo.cs" />
+    <Compile Include="GlobalData\DbConnect.cs" />
+    <Compile Include="Models\Mst_Role.cs" />
+    <Compile Include="Models\Mst_User.cs" />
     <Compile Include="OAuth\MyAuthorizationServerProvider.cs" />
     <Compile Include="OAuth\MyAuthorizeAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -3158,6 +3167,7 @@
     <Content Include="Style_CSS_JS\bower_components\jquery-ui\ui\.jshintrc" />
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Master\Role.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3167,7 +3177,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
