@@ -1,0 +1,55 @@
+﻿<style type="text/css">
+    .navbar-nav {
+        float: right;
+        margin: 0px;
+    }
+
+    a {
+        color: lightblue;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .navbar-nav > li > a:hover {
+        background-color: transparent;
+        color: lightgreen;
+    }
+
+    .active > a {
+        color: lightgreen;
+    }
+</style>
+
+1<body background="~/Images/HomePage.jpg">
+    <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu active">
+                <a onclick="">
+                    Home
+                </a>
+            </li>
+            <li class="dropdown user user-menu">
+                <a onclick="">
+                    About Us
+                </a>
+            </li>
+            <li class="dropdown user user-menu">
+                <a onclick="">
+                    Contact Us
+                </a>
+            </li>
+            <li class="dropdown user user-menu">
+                <a onclick="@("window.location.href='" + @Url.Action("Index", "Login") + "'");">
+                    Login
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        $('a').on('click', function () {
+            $('li').removeClass('active');
+            $(this).closest('li').addClass('active');
+        });
+    </script>
+</body>

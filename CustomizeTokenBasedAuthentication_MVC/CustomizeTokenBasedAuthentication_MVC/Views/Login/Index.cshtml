@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<html>
+<head>
+
+</head>
+<body>
+    <input type="text" id="txtUserName" />
+    <input type="text" id="txtPassword" />
+    <input type="button" onclick="login()" value="Login" />
+    <script type="text/javascript">
+        function login() {
+            var data = "username=" + $("#txtUserName").val() + "&password=" + $("#txtPassword").val() + "&grant_type=password";
+            $.ajax({
+                type: 'POST',
+                cache: false,
+                data: data,
+                url: '/token',
+                success: function (data) {
+                    window.location.href = "/Dashboard/Index";
+                    sessionStorage.access_token = data.access_token;
+                },
+                error: function (err) {
+                    alert(err.responseJSON.error_description);
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
